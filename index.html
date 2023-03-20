@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Set Interview</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <h1>Python Interview Questions</h1>
+        </div>
+    
+        <div>
+            <h3>1) What is Python? What are its benefits?</h3>
+            <p>
+                Python was created by <strong>Guido van Rossum</strong>, and released in <strong>1991</strong>. 
+                It is a high level, general purpose, interpreted programming language. Python's object-oriented 
+                programming features, modules, threads, and exception handling make it a powerful language for 
+                creating complex applications that model real-world problems. Python's automatic memory management 
+                eliminates the need for manual memory allocation, which can be a time-consuming and error-prone 
+                process.
+            </p>
+            <p><strong>Benefits of Python Programming Language:</strong></p>
+            <ul>
+                <li>Python is a versatile programming language that features a straightforward and uncomplicated 
+                    syntax, making it easy to learn and understand.
+                </li>
+                <li>
+                    The language prioritizes code readability and, therefore, minimizes the time and expenses 
+                    associated with maintaining programs.
+                </li>
+                <li>
+                    Python can be used for scripting and is entirely free and open-source, with various 
+                    third-party packages that support code reuse and modularity.
+                </li>
+                <li>
+                    Its high-level data structures, combined with dynamic typing and dynamic binding, 
+                    have attracted a vast community of developers who use Python for Rapid Application 
+                    Development and deployment.
+                </li>
+            </ul>
+        </div>
+    
+        <div>
+            <h3>2) What is an Interpreted language?</h3>
+            <p>
+                An interpreted language is a programming language that does not require a separate compilation 
+                step before running the program. Instead, the program is executed line by line, with the 
+                interpreter interpreting and executing each line of code as it is encountered in the source code. 
+                Examples of interpreted languages include Python, Javascript, R, PHP, and Ruby. Since interpreted 
+                languages do not require a separate compilation step, they can be more flexible and easier to use 
+                than compiled languages, but may be slower in some cases.
+            </p>
+        </div>
+    
+        <div>
+            <h3>3) What is dynamically typed language?</h3>
+            <p>
+                Python is a programming language that is interpreted, meaning that the code is executed 
+                line by line as it is read, without the need for a separate compilation step. This means that 
+                Python does not require the programmer to explicitly specify variable types before using them, 
+                as the interpreter will check the types dynamically during execution. This makes Python a
+                dynamically typed language, as the variable types can change at runtime. This approach allows
+                for more flexibility and faster development times, but may lead to errors that would have 
+            strongbeen caught by a compiler in statically typed languages.
+            </p>
+        </div>
+    
+        <div>
+            <h3>4) What is PEP 8?</h3>
+            <p>
+                PEP stands for Python Enhancement Proposal, which is a formal document that provides information 
+                and guidelines to the Python community on the design and implementation of new features and 
+                processes in Python. PEP 8 is a particularly crucial document as it outlines the style guidelines 
+                that should be followed when writing Python code. As a result, contributing to the Python
+                open-source community requires strict adherence to these guidelines, ensuring that code is 
+                consistent and readable for other developers who may work on the same project in the future.
+            </p>
+        </div>
+    
+        <div>
+            <h3>5) What is namespace in Python? What are its types?</h3>
+            <p>
+                In Python, a namespace is a mapping between names (or identifiers) and objects. Namespaces 
+                are used to organize and control the visibility of names in a program.
+            </p>
+            <p><strong>In general, there are three types of namespaces in Python:</strong></p>
+            <ol>
+                <li><strong>Built-in Namespace:</strong> This namespace contains built-in functions and types 
+                    provided by Python, which are always available for use in any Python program.
+                </li>
+                <li>
+                    <strong>Global Namespace:</strong> This namespace contains names defined at the module level. 
+                    These names are accessible from any part of the module.
+                </li>
+                <li>
+                    <strong>Local Namespace:</strong> This namespace is created when a function is called and 
+                    contains names defined within that function. These names are only accessible within the 
+                    function and are not visible outside of it.
+                </li>
+                <p>
+                    When a name is referenced in a Python program, Python first searches the local namespace, 
+                    then the global namespace, and finally the built-in namespace to resolve the name. This is 
+                    known as the "LEGB" rule.
+                </p>
+            </ol>
+        </div>
+    
+        <div>
+            <h3>6) How memory is managed in Python?</h3>
+            <ul>
+                <li>
+                    Python's Memory Manager handles the memory management in Python. It allocates memory in 
+                    the form of a private heap space that is exclusively used by Python. All the objects created 
+                    in Python are stored in this heap, which is not accessible to programmers. However, Python 
+                    does provide some core API functions to manipulate the memory in this heap space.
+                </li>
+                <li>
+                    Furthermore, Python also has a built-in garbage collection mechanism that automatically 
+                    recycles the unused memory in the private heap space. This helps to free up memory that 
+                    is no longer needed by the program, which improves the overall efficiency and performance 
+                    of the program.
+                </li>
+            </ul>
+            <img src="pmm.png" alt="Image Not Found!" height="380" width="480">
+        </div>
+    
+        <div>
+            <h3>7) What are Python literals?</h3>
+            <p>
+                Literals in Python are fixed values that are used to represent data types such as strings, 
+                numbers, and boolean values.
+            </p>
+            <ol>
+                <li><strong>String Literals:</strong> String literals are used to represent text and are enclosed 
+                    in either single or double quotes.
+                </li>
+                <li>
+                    <strong>Numerical Literals:</strong> Numeric literals are used to represent numeric values and 
+                    can be of three types: integer, float, and complex. Integers are whole numbers without a 
+                    decimal point, while floats are numbers with a decimal point. Complex numbers consist of a 
+                    real part and an imaginary part.
+                </li>
+                <li>
+                    <strong>Boolean Literals:</strong> Boolean literals are used to represent boolean values, 
+                    which are either True or False. These values are used to indicate whether a statement is 
+                    true or false.
+                </li>
+                <li>
+                    <strong>Special Literals:</strong> Python contains one special literal called as 'None' which 
+                    is used to represent a null variable. If 'None' is compared to anything other than 'None', 
+                    it will return False.
+                </li>
+            </ol>
+        </div>
+    
+        <div>
+            <h3>8) What is PYTHONPATH in Python?</h3>
+            <p>
+                PYTHONPATH is a configuration variable in the operating system's environment that can be set to 
+                include additional directories where Python can look for modules and packages. This variable 
+                allows you to add custom directories to the search path that Python uses to find modules, making 
+                it easier to use and maintain Python libraries that are not installed in the default system 
+                location.
+            </p>
+            <p>For example, if you have a Python project that depends on a custom module or library that is not 
+                part of the standard Python library, you can add the directory containing the module to the 
+                PYTHONPATH environment variable. This will allow Python to find and import the module even though 
+                it is not located in the default system path.
+            </p>
+        </div>
+    
+        <div>
+            <h3>9) What are Python modules? Name some commonly used built-in modules in Python.</h3>
+            <p>
+                In Python, a module is a file containing Python definitions and statements, which can be imported 
+                and used in other Python scripts. Modules help to organize the code and make it more manageable 
+                and reusable.
+            </p>
+            <ul>
+                <li><strong>os:</strong> Provides a way to interact with the operating system.</li>
+                <li><strong>math:</strong> Provides mathematical functions.</li>
+                <li><strong>datetime:</strong> Provides classes for working with dates and times.</li>
+                <li><strong>random:</strong> Provides functions for generating random numbers.</li>
+                <li><strong>json:</strong> Provides functions for working with JSON data.</li>
+                <li><strong>csv:</strong> Provides functions for working with CSV files.</li>
+                <li><strong>numpy:</strong>Provides support for multidimensional arrays and mathematical operations on them.</li>
+                <li><strong>pandas:</strong> Provides tools for data analysis and manipulation.</li>
+                <li><strong>matplotlib:</strong>Provides tools for creating visualizations such as graphs and charts.</li>
+                <li><strong>requests:</strong> Provides functions for making HTTP requests.</li>
+            </ul>
+            <p>There are many other useful Python modules available, and which one to use depends on the specific 
+                task 
+                or project.
+            </p>
+        </div>
+    
+        <div>
+            <h3>10) What are Python functions?</h3>
+            <p>
+                In Python, a function is a block of code that performs a specific task. It takes inputs, performs 
+                some computations, and returns output. Functions help us to organize our code and make it reusable. 
+                Python has three types of functions:
+            </p>
+            <ol>
+                <li><strong>Built-in Functions:</strong> These are the functions that come pre-installed with Python. 
+                    For example, the print() function is a built-in function that prints output to the console. 
+                    Other examples of built-in functions are len(), type(), range(), etc.
+                </li>
+                <li>
+                    <strong>User-defined Functions:</strong> These are the functions that are defined by the users to 
+                    perform specific tasks. The syntax for defining a user-defined function is as follows:
+                </li>
+                <p class="code"><!--Add Image of syntax later-->
+                    <strong>Example:</strong><br>
+                    def function_name(parameters): <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""docstring""" <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# function code <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return output
+                </p>
+                <li>
+                    <strong>Anonymous Functions (Lambda Functions):</strong> These are the functions that are defined 
+                    without a name. They are also called lambda functions. The syntax for defining a lambda 
+                    function is as follows:
+                </li>
+                <p>lambda parameters: expression</p>
+            </ol>
+        </div>
+    
+        <div>
+            <h3>11) What are global variables and local variables?</h3>
+            <p>
+                In Python, global variables are variables that are defined outside of any function or class, 
+                and can be accessed and modified by any part of the program. Local variables, on the other hand, 
+                are variables that are defined within a function or class, and can only be accessed within that 
+                function or class.
+            </p>
+            <p>Here is an example to illustrate the difference:</p>
+            <p class="code"><!-- Add Image of syntax later-->
+                <strong>Example:</strong> <br>
+                # Global variable <br>
+                name = "John" <br>
+                                <br>
+                def print_name(): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Local variable <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age = 25 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("My name is", name) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("I am", age, "years old") <br>
+                print_name()
+            </p>
+            <p>
+                In the above code, 'name' is a global variable that can be accessed within the 'print_name()' 
+                function. 'age', on the other hand, is a local variable that is defined only within the 
+                'print_name()' function and cannot be accessed outside of it.
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                # Loacal variable <br>
+                count = 0 <br>
+                def increment_count(): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;global count <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count += 1 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_count() <br>
+                print(count) # Output: 1 <br>
+            </p>
+            <p>
+                In the above code, the 'global' keyword is used to tell Python that 'count' refers to the global 
+                variable and not a local variable with the same name. The 'increment_count()' function then modifies 
+                the global variable 'count'.
+            </p>
+        </div>
+    
+        <div>
+            <h3>12) What are the types of parameter passing mechanisms in Python?</h3>
+            <p>In Python, there are two types of parameter passing mechanisms:</p>
+            <ol>
+                <li>
+                    <strong>Pass by reference:</strong> In Python, all variables are actually references to 
+                    objects in memory. When a function is called and a parameter is passed by reference, the 
+                    function receives a reference to the same object as the original variable. Any changes made 
+                    to the parameter within the function are reflected in the original variable outside the 
+                    function.
+                </li>
+                <li>
+                    <strong>Pass by value:</strong> In some cases, when a parameter is passed by value, a copy 
+                    of the parameter's value is made and passed to the function. This means that any changes 
+                    made to the parameter within the function do not affect the original variable outside the 
+                    function.
+                </li>
+            </ol>
+            <p>
+                It's important to note that even when a parameter is passed by value, if the value is an object 
+                (such as a list or dictionary), the object itself is still passed by reference. This means that 
+                changes made to the object within the function will be reflected in the original variable outside 
+                the function.
+            </p>
+            <p>
+                In Python, the default parameter passing mechanism is pass by reference. However, you can force 
+                a parameter to be passed by value by making a copy of the parameter using the copy module or by 
+                explicitly assigning a new value to the parameter within the function.
+            </p>
+        </div>
+    
+        <div>
+            <h3>13) What is type conversion in python?</h3>
+            <p>
+                In Python, type conversion (or typecasting) refers to the process of changing the data type 
+                of a variable or an object to another data type. This is useful when you need to perform 
+                operations on data of different types, or when you want to represent data in a different 
+                format.
+            </p>
+            <p>
+                Python has a number of built-in functions that allow you to convert between data types. 
+                Some of the most commonly used conversion functions are:
+            </p>
+            <ul>
+                <li>
+                    <strong>int():</strong> Converts a string or a float to an integer.
+                </li>
+                <li>
+                    <strong>float():</strong> Converts a string or an integer to a floating-point number.
+                </li>
+                <li>
+                    <strong>str():</strong> Converts an integer, float or any other object to a string.
+                </li>
+                <li>
+                    <strong>bool():</strong> Converts a value to a Boolean (True or False).
+                </li>
+            </ul>
+            <p class="code"><!--Add Image Later-->
+                <strong>Example:</strong> <br>
+                # converting a string to an integer <br>
+                age_str = "28" <br>
+                age_int = int(age_str) <br>
+                print(age_int)  # output: 28<br>
+                                        <br>
+                # converting a float to an integer <br>
+                price_float = 9.99 <br>
+                price_int = int(price_float)<br>
+                print(price_int)  # output: 9<br>
+                                   <br>
+                # converting an integer to a string <br>
+                number_int = 42 <br>
+                number_str = str(number_int) <br>
+                print(number_str)  # output: "42"  <br>
+                                <br>
+                # converting a string to a boolean <br>
+                is_true = bool("True") <br>
+                print(is_true)  # output: True <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>14) What is the difference between Python Arrays and Lists?</h3>
+            <p>Arrays and lists are both used to store a collection of items, but they have some key differences.
+                Below are some of the main differences between Python arrays and lists:
+            </p>
+            <ol>
+                <li>
+                    <strong>Type of elements:</strong> The most significant difference between arrays and 
+                    lists is the type of elements they can contain. In Python, lists can contain elements of 
+                    different data types, such as integers, strings, and objects, whereas arrays can only 
+                    contain elements of the same data type.
+                </li>
+                <li>
+                    <strong>Size and memory allocation:</strong> Lists are dynamically sized, meaning you 
+                    can add or remove elements from a list at any time. They are also allocated in memory 
+                    in a way that allows them to grow or shrink as needed. Arrays, on the other hand, are 
+                    typically fixed in size and must be allocated in memory with a specific size at the time 
+                    of creation.
+                </li>
+                <li>
+                    <strong>Performance:</strong> Arrays are generally more performant than lists, especially 
+                    when working with large collections of data, because they are allocated in contiguous 
+                    blocks of memory. This makes it easier for the computer to access and manipulate the 
+                    elements in the array. Lists, on the other hand, are implemented as linked lists, which 
+                    can be slower to access and manipulate.
+                </li>
+            </ol>
+            <p class="code">
+                <!--Add Image of syntax later -->
+                <strong>Example:</strong> <br>
+                import array <br>
+                             <br>
+                # creating an array of integers <br>
+                my_array = array.array('i', [1, 2, 3, 4, 5]) <br>
+                                                             <br>
+                # creating a list of mixed data types <br>
+                my_list = [1, "two", 3.0, [4, 5, 6]] <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>15) What is self in Python?</h3>
+            <p>
+                In Python, 'self' is a conventionally used variable name that represents the instance of a 
+                class. It is typically the first parameter of any method defined within a class. When you 
+                create an object of a class, the 'self' parameter refers to the specific instance of that 
+                class. You can then use the 'self' keyword to access the instance variables and methods of 
+                the class.
+            </p>
+        </div>
+
+        <div>
+            <h3>16) What is __init__() ? Or How to overload constructors or methods in Python?</h3>
+            <p>
+                In Python, '__init__' is a special method (sometimes called a constructor) that is 
+                automatically called when an object of a class is created. The purpose of '__init__' is to 
+                initialize the object's attributes and set their initial values.
+            </p>
+            <p>
+                The '__init__' method takes 'self' as its first parameter, which refers to the specific instance 
+                of the class that is being created. You can then define any other parameters you want to use 
+                to initialize the object's attributes. Below is an example of how '__init__' and 'self' are used 
+                in a Python class:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                class Person: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, name, age): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = name <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.age = age <br>
+                                                                                          <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def say_hello(self): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"Hello, my name is {self.name} and I am {self.age} years old.") <br>
+                                                                                            <br>
+                # creating a Person object and calling its say_hello() method <br>
+                p = Person("Alice", 25) <br>
+                p.say_hello()  # output: "Hello, my name is Alice and I am 25 years old." <br>
+            </p>
+            <p>
+                In the above example, the '__init__' method takes 'self', 'name', and 'age' as parameters. When an 
+                object of the 'Person' class is created, 'self' refers to that specific instance of the class, 
+                while 'name' and 'age' are the values passed in when the object is created. The '__init__' method 
+                then initializes the 'name' and 'age' attributes of the object with the values passed in. <br>
+                The '__init__' method is an optional method in Python classes, but it is often used to ensure 
+                that objects of a class are created with the correct initial state.
+            </p>
+        </div>
+        
+        <div>
+            <h3>17) How does break and continue keywords work?</h3>
+            <p>
+                <strong>break</strong> and <strong>continue</strong> are the two keywords in Python that are 
+                used to control the flow of loops, such as for and while loops.
+            </p>
+            <p>
+                <strong>break</strong> is used to immediately terminate a loop, even if the loop's condition 
+                is still true. When <strong>break</strong> is encountered, the loop is exited and the program 
+                continues executing from the next statement after the loop. Here's an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                for i in range(1, 11): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if i == 5: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break <br>
+                print(i)
+            </p>
+            <p>
+                In this example, the loop will print out the numbers 1 through 4, but when i equals 5, 
+                the <strong>break</strong> statement is executed, and the loop is immediately terminated. 
+                The program then continues executing from the next statement after the loop, which is nothing 
+                in this case.
+            </p>
+            <p>
+                <strong>continue</strong>, on the other hand, is used to skip over the current iteration of a 
+                loop and move on to the next iteration. When <strong>continue</strong> is encountered, 
+                the remaining statements in the loop body for the current iteration are skipped, and the 
+                loop condition is evaluated again for the next iteration. Here's an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                for i in range(1, 11): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if i == 5: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i) <br>
+            </p>
+            <p>
+                In this example, the loop will print out all the numbers from 1 through 10, except for 5. 
+                When i equals 5, the <strong>continue</strong> statement is executed, which skips the 
+                remaining statements in the loop body for that iteration and moves on to the next iteration.
+            </p>
+            <p>
+                <strong>break</strong> and <strong>continue</strong> are often used together with conditional 
+                statements, such as <strong>if</strong> statements, to control the flow of a loop based on certain conditions. 
+                They can help make loops more efficient and reduce the complexity of the code.
+            </p>
+        </div>
+
+        <div>
+            <h3>18) What is slicing in Python?</h3>
+            <p>
+                Slicing is a technique in Python used to extract a portion of a sequence (such as a string, 
+                list, or tuple) by specifying a range of indices. In Python, we can slice sequences using 
+                the colon : operator inside square brackets [ ]. The general syntax for slicing is as follows:
+            </p>
+            <p>
+                <strong>Syntax:</strong> 
+                dataStructure[start:end:step]
+            </p>
+            <p>
+                where:
+                <ul>
+                    <li>
+                        start: The index of the first element to be included in the slice (inclusive). 
+                        If omitted, it defaults to 0.
+                    </li>
+                    <li>
+                        end: The index of the last element to be included in the slice (exclusive). If 
+                        omitted, it defaults to the length of the sequence.
+                    </li>
+                    <li>
+                        step: The number of indices to skip between each element in the slice. If omitted, it defaults to 1.
+                    </li>
+                </ul>
+                Here are some examples of using slicing in Python:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                my_string = "Hello, World!" <br>
+                my_list = [1, 2, 3, 4, 5] <br>
+                <br>
+                # Slicing a string <br>
+                print(my_string[0:5])    # Output: "Hello" <br>
+                print(my_string[7:])     # Output: "World!" <br>
+                print(my_string[::2])    # Output: "Hlo ol!" <br>
+                <br>
+                # Slicing a list
+                print(my_list[1:3])      # Output: [2, 3] <br>
+                print(my_list[:-1])      # Output: [1, 2, 3, 4] <br>
+                print(my_list[::2])      # Output: [1, 3, 5] <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>19) What does [::-1] do?</h3>
+            <p>
+                In Python, <strong>[::-1]</strong> is a slicing notation used on a sequence, such as a list 
+                or a string, to reverse the order of its elements. The notation <strong>[start:stop:step]</strong> 
+                is used to slice a sequence from index <strong>start</strong> to index <strong>stop</strong> with a
+                step of <strong>step</strong>.
+            </p>
+            <p>
+                When the start and stop indices are not specified, the entire sequence is considered, and when 
+                the step is negative, the sequence is traversed in reverse order. So, <strong>[:: -1]</strong> 
+                means to start at the beginning of the sequence, end at the end of the sequence (implicitly), 
+                and traverse the sequence backwards with a step of -1. Below is an example of using 
+                <strong>[::-1]</strong> to reverse a list
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                myList = [1, 2, 3, 4, 5] <br>
+                myReversedList = myList [::-1] <br>
+                print(myReversedList)  # Output: [5, 4, 3, 2, 1] <br>
+            </p>
+            <p>
+                In this example, the original list ' [1, 2, 3, 4, 5] ' is reversed using <strong>[::-1]</strong>, 
+                and the resulting reversed list is ' [5, 4, 3, 2, 1] '. This slicing notation is commonly used 
+                when we need to reverse a list or a string in Python.
+            </p>
+        </div>
+
+        <div>
+            <h3>20) How can you randomize the items of a list in Python?</h3>
+            <p>
+                In Python, we can use the <strong>random</strong> module to randomize the items of a list. 
+                The <strong>random</strong> module provides various functions to generate random numbers, 
+                and we can use the <strong>shuffle()</strong> function from this module to shuffle the 
+                items of a list randomly. The <strong>shuffle()</strong> function modifies the original 
+                list in place, and it does not return anything. Here's an example of shuffling a list in
+                Python:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                    import random <br>
+                                  <br>
+                    my_list = [1, 2, 3, 4, 5] <br>
+                    random.shuffle(my_list) <br>
+                    print(my_list)  # Output: [2, 1, 4, 3, 5] <br>                   
+            </p>
+            <p>
+                In this example, we first import the <strong>random</strong> module, then create a list 
+                my_list containing some elements. We then call the <strong>shuffle()</strong> function from 
+                the <strong>random</strong> module and pass the 'my_list' as an argument to it. This shuffles 
+                the items of the 'my_list' list randomly. Finally, we print the shuffled list to the console.
+            </p>
+        </div>
+
+        <div>
+            <h3>21) What are Python iterators?</h3>
+            <p>
+                An iterator is an object that allows us to traverse through the elements of a container, 
+                such as a list or a string, one at a time. The iterator keeps track of its current position 
+                in the container and returns the next element when asked.
+            </p>
+        </div>
+
+        <div>
+            <h3>22) Which are the data structures that are available in Python?</h3>
+            <p> Python provides several built-in data structures that are used to store and organize data 
+                efficiently. Here are some of the most commonly used data structures in Python:
+                <ol>
+                    <li>
+                        <strong>Lists:</strong> Lists are mutable collections of elements that are ordered 
+                        and can contain elements of different types. They are created using square brackets 
+                        [] and can be modified by adding, removing, or changing elements. Lists are often 
+                        used to store and manipulate collections of data, such as a list of numbers or a list 
+                        of names.
+                        <p class="code">
+                            <strong>Example:</strong> <br>
+                            # Creating a list <br>
+                            my_list = [1, 2, "hello", 3.5, True] <br>
+                                                                 <br>
+                            # Accessing elements <br>
+                            print(my_list[0])  # 1 <br>
+                            print(my_list[2])  # "hello" <br>
+                                                         <br>
+                            # Adding elements <br>
+                            my_list.append("world") <br>
+                            print(my_list)  # [1, 2, "hello", 3.5, True, "world"] <br>
+                                                                        <br>
+                            # Removing elements <br>
+                            my_list.remove(2) <br>
+                            print(my_list)  # [1, "hello", 3.5, True, "world"] <br>
+                                                                            <br>
+                            # Changing elements <br>
+                            my_list[1] = "hi" <br>
+                            print(my_list)  # [1, "hi", 3.5, True, "world"] <br>
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Tuples:</strong> Tuples are similar to lists, but they are immutable, 
+                        meaning they cannot be changed once created. They are created using parentheses () 
+                        and are often used to represent a collection of related values, such as a date 
+                        (day, month, year) or a 2D point (x, y).
+                        <p class="code">
+                            <strong>Example:</strong> <br>
+                            # Creating a tuple <br>
+                            my_tuple = (1, 2, "hello", 3.5, True) <br>
+                                                                   <br>
+                            # Accessing elements <br>
+                            print(my_tuple[0])  # 1 <br>
+                            print(my_tuple[2])  # "hello" <br>
+                                                       <br>
+                            # Tuples are immutable, so we cannot add or remove elements or change their values <br>
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Sets:</strong> Sets are unordered collections of unique elements. They are 
+                        created using curly braces {} or the set() function and can be modified by adding or 
+                        removing elements. Sets are often used to perform mathematical set operations such as 
+                        union, intersection, and difference.
+                        <p class="code">
+                            <strong>Example:</strong> <br>
+                            # Creating a set <br>
+                            my_set = {1, 2, 3, 4, 5} <br>
+                            <br>
+                            # Adding elements <br>
+                            my_set.add(6) <br>
+                            print(my_set)  # {1, 2, 3, 4, 5, 6} <br>
+                            <br>
+                            # Removing elements <br>
+                            my_set.remove(2) <br>
+                            print(my_set)  # {1, 3, 4, 5, 6} <br>
+                            <br> 
+                            # Performing set operations <br>
+                            set1 = {1, 2, 3} <br>
+                            set2 = {3, 4, 5} <br>
+                            union = set1.union(set2) <br>
+                            print(union)  # {1, 2, 3, 4, 5} <br>
+                            <br>
+                            intersection = set1.intersection(set2) <br>
+                            print(intersection)  # {3} <br>
+                            <br>
+                            difference = set1.difference(set2) <br>
+                            print(difference)  # {1, 2} <br>
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Dictionaries:</strong> Dictionaries are collections of key-value pairs, 
+                        where each key is unique and maps to a value. They are created using curly braces 
+                        {} or the dict() function and can be modified by adding, removing, or changing 
+                        key-value pairs. Dictionaries are often used to store and retrieve data efficiently, 
+                        such as a mapping of names to ages.
+                        <p class="code">
+                            <strong>Example:</strong> <br>
+                            # Creating a dictionary <br>
+                            my_dict = {"apple": 1, "banana": 2, "orange": 3} <br>
+                            <br>
+                            # Accessing values <br>
+                            print(my_dict["apple"])  # 1 <br>
+                            print(my_dict.get("banana"))  # 2 <br>
+                            <br>
+                            # Adding or changing values <br>
+                            my_dict["grape"] = 4 <br>
+                            print(my_dict)  # {"apple": 1, "banana": 2, "orange": 3, "grape": 4} <br>
+                            <br>
+                            # Removing values <br>
+                            del my_dict["orange"] <br>
+                            print(my_dict)  # {"apple": 1, "banana": 2, "grape": 4} <br>
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Arrays:</strong> Arrays are used to store homogeneous data, meaning data of 
+                        the same type. They are more efficient than lists for certain operations, such as 
+                        numerical computations. They are created using the array() function from the array 
+                        module and can be modified by changing elements.
+                        <p class="code">
+                            <strong >Example:</strong> <br>
+                            import array <br>
+                            <br>
+                            # Creating an array of integers <br>
+                            my_array = array.array("i", [1, 2, 3, 4, 5]) <br>
+                            <br>
+                            # Accessing elements <br>
+                            print(my_array[0])  # 1 <br>
+                            print(my_array[2])  # 3 <br>
+                            <br>
+                            # Changing elements <br>
+                            my_array[1] = 6 <br>
+                            print(my_array)  # array("i", [1, 6, 3, 4, 5]) <br>
+                            <br>
+                            # Arrays are more efficient than lists for numerical computations <br>
+                            import numpy as np <br>
+                            <br>
+                            my_numpy_array = np.array([1, 2, 3, 4, 5]) <br>
+                            print(my_numpy_array * 2)  # [ 2  4  6  8 10] <br>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            <p>
+                These data structures provide a range of capabilities for storing and manipulating data 
+                efficiently in Python. By choosing the appropriate data structure for a given problem, we 
+                can optimize the performance of our code and make it more efficient.
+            </p>
+        </div>
+
+        <div>
+            <h3>23) What is Pass in Python?</h3>
+            <p>
+                In Python, <strong>pass</strong> is a null statement, meaning that it doesn't do anything. 
+                It is commonly used as a placeholder or a stub statement in situations where the programmer 
+                needs to include a statement in the code to satisfy the syntax requirements of the language, 
+                but doesn't yet know what the statement should do.
+            </p>
+            <p>
+                For example, when defining a class or a function in Python, the body of the class or function 
+                must have at least one statement. If you don't have any statements to include yet, you can 
+                use <strong>pass</strong> as a placeholder until you write any logic. Below is an example of 
+                using <strong>pass </strong> as a placeholder in a class definition:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                class MyClass: <br>
+                def my_method(self): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass <br>
+            </p>
+            <p>
+                In this example, the <strong>MyClass</strong> class has a method called <strong>my_method</strong>, 
+                but the method body contains only <strong>pass</strong>. This is because the programmer hasn't yet decided what the method should do, but they still need to include a statement in the method body to satisfy the syntax requirements of the language.
+            </p>
+        </div>
+
+        <div>
+            <h3>24) What is docstring in Python?</h3>
+            <p>
+                A docstring is a string literal that appears as the first statement in a module, function, 
+                class, or method definition. It is used to document the purpose and usage of the code, and 
+                to provide information about the input and output parameters, as well as any exceptions that 
+                the code may raise. A docstring can be a single-line or multi-line string and it starts  with " " " 
+                & ends with " " " .
+               
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                def my_function(param1, param2): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" " " <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This function takes two parameters, param1 and param2, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and returns their sum. <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" " " <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return param1 + param2 <br>
+            </p>
+            <p>
+                In this example, the docstring provides a brief description of what the function does, 
+                what parameters it takes, and what it returns.
+            </p>
+        </div>
+
+        <div>
+            <h3>25) What is a negative index in Python and why it is used?</h3>
+            <p>
+                Negative indexing refers to the practice of using negative numbers to index a sequence, 
+                such as a string or a list. In this context, the last element in the sequence has an index 
+                of -1, the second-to-last element has an index of -2, and so on.
+            </p>
+            <p>
+                Negative indexing is useful when you want to access elements of a sequence starting from 
+                the end, rather than from the beginning. It can be particularly useful when working with 
+                sequences of unknown length, where you don't know the position of the last element. Here's an 
+                example of using negative indexing to access elements of a string:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                my_string = "Hello, world!" <br>
+                print(my_string[-1])    # Output: "!" <br>
+                print(my_string[-2])    # Output: "d" <br>
+                print(my_string[-3])    # Output: "l" <br>
+            </p>
+            <p>
+                In this example, we use negative indexing to access the last character of the string, as well 
+                as the second-to-last and third-to-last characters. Negative indexing can also be used in 
+                conjunction with slicing to extract a subset of the sequence. Here's an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                my_list = [1, 2, 3, 4, 5] <br>
+                print(my_list[-3:])    # Output: [3, 4, 5] <br>
+            </p>
+            <p>
+                In this example, we use negative indexing in combination with slicing to extract the last 
+                three elements of the list.
+            </p>
+        </div>
+
+        <div>
+            <h3>26) What are Python packages?</h3>
+            <p>
+                A package is a collection of related modules (Python files) that can be used together as a 
+                single unit. A package typically includes a set of related functions, classes, and variables 
+                that provide a specific functionality.
+            </p>
+            <p>
+                Packages are organized using a directory hierarchy, where each subdirectory represents a 
+                package. The top-level package is typically represented as a directory in the file system, 
+                and can contain one or more subpackages, as well as individual modules.
+            </p>
+            <p>
+                Packages are used to organize code, make it reusable, and simplify the import process. 
+                By grouping related modules into a package, you can avoid naming conflicts and create a 
+                logical structure for your code.
+            </p>
+        </div>
+
+        <div>
+            <h3>27) How can files be deleted in Python?</h3>
+            <p>
+                You can delete a file using the <strong>os</strong> module, which provides a set of 
+                functions for interacting with the file system. To delete a file using the <strong>os</strong>
+                module, you can use the <strong>os.remove()</strong> function, which takes the file path as 
+                an argument.
+            </p>
+            <p>
+                Here's an example of how to use the <strong>os.remove()</strong> function to delete a file:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                import os <br>
+                <br>
+                # specify the path of the file to be deleted <br>
+                file_path = "/path/to/file.txt" <br>
+                <br>
+                # delete the file <br>
+                os.remove(file_path) <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>28) How to remove item from a array or a list in Python?</h3>
+            <p>
+                In Python, you can remove an item from a list using the <strong>remove()</strong> method or the del statement.
+                Here's an example of how to use the <strong>remove()</strong> method to remove an item from a list:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                # create a list <br>
+                my_list = [1, 2, 3, 4, 5] <br>
+                        <br>
+                # remove an item from the list <br>
+                my_list.remove(3) <br>
+                        <br>
+                # print the updated list <br>
+                print(my_list) # Output: [1, 2, 4, 5] <br>
+            </p>
+            <p>
+                In this example, the <strong>remove()</strong> method is called on the <strong>my_list</strong> list, passing in the value <strong>3</strong> as 
+                an argument. This removes the first occurrence of <strong>3</strong> from the list.
+                    <br>
+                Alternatively, you can use the <strong>del</strong> statement to remove an item from a list by its index:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                # create a list <br>
+                my_list = [1, 2, 3, 4, 5] <br>
+                        <br>
+                # remove an item from the list <br>
+                del my_list[2] <br>
+                        <br>
+                # print the updated list <br>
+                print(my_list) # Output: [1, 2, 4, 5] <br>
+            </p>
+            <p>
+                In this example, the <strong>del</strong> statement is used to remove the item at 
+                index <strong>2</strong> from the <strong>my_list</strong> list. This results in the same 
+                output as the previous example.
+            </p>
+        </div>
+
+        <div>
+            <h3>29) What is split() used for?</h3>
+            <p>
+                In Python, <strong>split()</strong> is a built-in string method used to split a string into 
+                a list of substrings based on a specified separator i.e delimiter. The separator can be any 
+                character or string that appears in the original string. Here's an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                # create a string <br>
+                my_string = "apple,banana,orange" <br>
+                    <br>
+                # split the string into a list of substrings <br>
+                my_list = my_string.split(',') <br>
+                    <br>
+                # print the list <br>
+                print(my_list) # Output: ['apple', 'banana', 'orange'] <br>
+            </p>
+            <p>
+                In this example, the <strong>split()</strong> method is called on the <strong>my_string</strong> 
+                variable with a comma separator specified as the argument. This splits the string into a list of 
+                three substrings, each containing a fruit name.
+            </p>
+        </div>
+
+        <div>
+            <h3>30) What is join() used for?</h3>
+            <p>
+                The <strong>join()</strong> method in Python is a string method that is used to concatenate 
+                a list of strings into a single string, using a specified delimiter. It takes an iterable 
+                (e.g. a list or a tuple) of strings as input, and returns a single string that is the 
+                concatenation of all the strings in the iterable, separated by the specified delimiter.
+                Here is an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                fruits = ["apple", "banana", "cherry"] <br>
+                delimiter = ", " <br>
+                joined_fruits = delimiter.join(fruits) <br>
+                print(joined_fruits) # Output: "apple, banana, cherry" <br>
+            </p>
+            <p>
+                In this example, the <strong>join()</strong> method is used to concatenate the strings 
+                <strong>"apple", "banana", and "cherry" </strong> into a single string, separated by the delimiter <strong>", "</strong>. 
+                The resulting string <strong>"apple, banana, cherry"</strong> is then printed to the console.
+            </p>
+        </div>
+
+        <div>
+            <h3>31) How to import Python modules?</h3>
+            <p>
+                Modules are separate files that contain Python code, and can be used to organize code and 
+                make it easier to reuse. To import a module in Python, you can use the <strong>import</strong> 
+                keyword followed by the name of the module.
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                # Import the entire module <br>
+                import math <br>
+                    <br>
+                # Use a function from the module <br>
+                x = math.sqrt(25) <br>
+                print(x) # Output: 5.0 <br>
+                        <br>
+                # Import a specific function from the module <br>
+                from math import sqrt <br>
+                      <br>
+                # Use the function <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>32) How is multithreading achieved in Python?</h3>
+            <p>
+                Multithreading in Python can be achieved using the <strong>threading</strong> module, 
+                which provides a way to create and manage threads in a Python program. The <strong>threading</strong> 
+                module provides a higher-level interface to threading than the lower-level <strong>_thread</strong> module.
+            </p>
+            <p>
+                Python's Global Interpreter Lock (GIL) limits the amount of true parallelism that can be
+                achieved with multithreading, but multithreading can still be useful for certain types of 
+                tasks, such as I/O-bound tasks or tasks that involve waiting for external events. To achieve 
+                true parallelism in Python, multiprocessing can be used instead of multithreading.
+            </p>
+        </div>
+
+        <div>
+            <h3>33) Which sorting technique is used by sort() and sorted() functions of Python?</h3>
+            <p>
+                The <strong>sort()</strong> and <strong>sorted()</strong> functions of Python use the Timsort 
+                algorithm for sorting. Timsort is a hybrid sorting algorithm that combines insertion sort 
+                and merge sort. It was designed to perform well on many kinds of real-world data and is 
+                known for its efficiency and stable performance. Timsort was developed by Tim Peters in 
+                2002 for use in the Python standard library.
+            </p>
+            <p>
+                When the <strong>sort()</strong> method is called on a list, it sorts the elements of the 
+                list in place, whereas the <strong>sorted()</strong> function returns a new sorted list. 
+                Here is an example of using the <strong>sorted()</strong> function to sort a list:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5] <br>
+                                <br>
+                sorted_numbers = sorted(numbers) <br>
+                                <br>
+                print(sorted_numbers) # [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9] <br>
+            </p>
+            <p>
+                In this example, the <strong>sorted()</strong> function is called on the "numbers" list, 
+                which returns a new sorted list. The original "numbers" list remains unchanged.
+            </p>
+        </div>
+
+        <div>
+            <h3>34) How to debug a Python program?</h3>
+            <p>
+                <ul>
+                    <li>
+                        <strong>Pickling:</strong> The pickle module accepts the Python objects and convert 
+                        it into string representation and then dump into the file using dump() function.
+                    </li>
+                    <li>
+                        <strong>Unpickling:</strong> The process of retrieving the original Python objects 
+                        from the string representation is called unpickling.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div>
+            <h3>35) What is the difference between mutable datatypes and immutable datatypes in Python?</h3>
+            <p>
+                In Python, a datatype is said to be mutable if its value can be changed after it has been 
+                created, while it is said to be immutable if its value cannot be changed after it has been 
+                created.
+            </p>
+            <ul>
+                <li>
+                    Mutable datatypes in Python include lists, sets, and dictionaries. This means that you 
+                    can change the elements of a list, add or remove items from a set, or add or remove
+                    key-value pairs from a dictionary after it has been created. For example:
+                    <p class="code">
+                        <strong>Example:</strong> <br>
+                        my_list = [1, 2, 3] <br>
+                        my_list[0] = 4 <br>
+                        print(my_list) # [4, 2, 3] <br>
+                                    <br>
+                        my_set = {1, 2, 3} <br>
+                        my_set.add(4) <br>
+                        print(my_set) # {1, 2, 3, 4} <br>
+                                    <br>
+                        my_dict = {'a': 1, 'b': 2} <br>
+                        my_dict['c'] = 3 <br>
+                        print(my_dict) # {'a': 1, 'b': 2, 'c': 3} <br>
+                    </p>
+                </li>
+                <li>
+                    Immutable datatypes in Python include strings, numbers, and tuples. This means that you 
+                    cannot change the value of a string, number, or tuple after it has been created. For 
+                    example:
+                    <p class="code">
+                        <strong>Example:</strong> <br>
+                        my_str = "hello" <br>
+                        # my_str[0] = "H"   # Raises TypeError: 'str' object does not support item assignment <br>
+                        my_str = "Hello"   # This creates a new string with the value "Hello" <br>
+                                    <br>
+                        my_num = 10 <br>
+                        # my_num += 5        # This creates a new number with the value 15 <br>
+                                    <br>
+                        my_tuple = (1, 2, 3) <br>
+                        # my_tuple[0] = 4   # Raises TypeError: 'tuple' object does not support item assignment <br>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>36) What is the difference between set and dictionary?</h3>
+            <p>
+                Both sets and dictionaries are built-in data types in Python, but they have some differences:
+                <ol>
+                    <li>
+                        <strong>Purpose:</strong> The main purpose of a set is to store a collection of 
+                        unique elements, while a dictionary is used to store key-value pairs, where each 
+                        key has an associated value
+                    </li>
+                    <li>
+                        <strong>Syntax:</strong> A set is defined using curly braces {} with comma-separated 
+                        values, while a dictionary is defined using curly braces {} with comma-separated 
+                        key-value pairs in the form of key: value.
+                    </li>
+                    <li>
+                        <strong>Indexing:</strong> A set is an unordered collection, so its elements cannot 
+                        be accessed using an index. On the other hand, a dictionary is indexed using its keys 
+                        to retrieve their corresponding values.
+                    </li>
+                    <li>
+                        <strong>Mutability:</strong> Sets are mutable, which means that you can add or remove 
+                        elements from them. Dictionaries are also mutable, but you can only modify their 
+                        values, not their keys.
+                    </li>
+                    <li>
+                        <strong>Duplicates:</strong> Sets don't allow duplicates, while dictionaries can 
+                        have duplicate values, but not duplicate keys
+                    </li>
+                </ol>
+                Here's an example code snippet to illustrate the difference between sets and dictionaries:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                # Example of a set <br>
+                my_set = {1, 2, 3, 4, 5, 1, 2} <br>
+                print(my_set)  # Output: {1, 2, 3, 4, 5} <br>
+                                    <br>
+                # Example of a dictionary <br>
+                my_dict = {'apple': 2, 'banana': 3, 'orange': 4} <br>
+                print(my_dict)  # Output: {'apple': 2, 'banana': 3, 'orange': 4} <br>
+            </p>
+            <p>
+                In the example above, the set <strong>my_set</strong> only contains unique elements, while 
+                the dictionary <strong>my_dict</strong> contains key-value pairs.
+            </p>
+        </div>
+
+        <div>
+            <h3>37) What is list comprehension? Give an example.</h3>
+            <p>
+                List comprehension is a concise way of creating a new list by performing operations on each 
+                item of an existing list or an iterable. It is a powerful tool in Python for creating lists 
+                in a single line of code. Here is an example of list comprehension:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                # Create a list of squares of numbers from 1 to 10 <br>
+                squares = [i*i for i in range(1, 11)] <br>
+                print(squares) <br>
+                # Output [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] <br>
+            </p>
+            <p>
+                In the above example, a new list "squares" is created using list comprehension. The 
+                expression "i*i" performs the operation of squaring each number in the range "1" to "10", 
+                and the resulting squares are added to the list. The "for" loop iterates through each number 
+                in the range, and the square of each number is added to the list using the <strong>append()</strong> method.
+            </p>
+        </div>
+
+        <div>
+            <h3>38) What is dictionary comprehension? Give an example.</h3>
+            <p>
+                Dictionary comprehension is a concise way of creating a new dictionary by performing 
+                operations on each key-value pair of an existing dictionary or an iterable. It is a powerful 
+                tool in Python for creating dictionaries in a single line of code. Here is an example of 
+                dictionary comprehension:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                # Create a dictionary of squares of numbers from 1 to 10 <br>
+                squares = {i: i*i for i in range(1, 11)} <br>
+                print(squares) <br>
+                # Output {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100} <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>39) What is a generator in Python?</h3>
+            <p>
+                A generator is a special type of function which doesn't return a single value instead it 
+                returns an iterator object with a sequence of values. In generator, <strong>yield</strong> 
+                statement is used instead of <strong>return</strong> statement.
+            </p>
+        </div>
+
+        <div>
+            <h3>40) Whether tuple comprehension is possible?</h3>
+            <p>
+                No, tuple comprehension is not possible in Python. Unlike lists and dictionaries, which 
+                have comprehensions, tuples do not support comprehension. However, it is possible to create 
+                a tuple using a generator expression.
+            </p>
+        </div>
+
+        <div>
+            <h3>41) What is a lambda function?</h3>
+            <p>
+                In Python, a lambda function is a small anonymous function that can have any number of 
+                arguments, but can only have one expression. The expression is evaluated and returned when 
+                the lambda function is called.
+            </p>
+            <p>
+                Lambda functions are often used as a way to create short, throwaway functions that can be 
+                used in situations where defining a regular function would be overkill. They are also 
+                frequently used in functional programming, where functions are treated as values that can 
+                be passed around and manipulated like any other data type. Here's an example of a simple 
+                lambda function that takes two arguments and returns their sum:
+            </p>
+            <p class="code">
+                <strong>Example:</strong><br>
+                sum = lambda x, y: x + y <br>
+                print(sum(2, 3))   # Output: 5 <br>
+            </p>
+            <p>
+                In this example, <strong>lambda x, y: x + y</strong> creates an anonymous function that 
+                takes two arguments "x" and "y", and returns their sum. The resulting function is then 
+                assigned to the variable <strong>sum</strong>, which can be called like any other function. 
+                When <strong>sum(2, 3)</strong> is called, the lambda function is evaluated and returns the 
+                result "5".
+            </p>
+        </div>
+
+        <div>
+            <h3>42) What is swapcase() in Python?</h3>
+            <p>
+                <strong>swapcase()</strong> is a built-in Python string method that returns a new string by 
+                swapping the case of each character in the original string. This means that any uppercase 
+                characters in the original string will be converted to lowercase, and any lowercase 
+                characters will be converted to uppercase. Here's an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong><br>
+                text = "Hello, World!" <br>
+                new_text = text.swapcase() <br>
+                print(new_text)   # Output: hELLO, wORLD! <br>
+            </p>
+            <p>
+                In this example, the original string <strong>text</strong> contains both uppercase and 
+                lowercase characters. When we call <strong>swapcase()</strong> on this string, each 
+                character's case is swapped, resulting in the new string <strong>new_text</strong> with all 
+                uppercase characters converted to lowercase and vice versa
+            </p>
+        </div>
+
+        <div>
+            <h3>43) What is monkey patching in Python?</h3>
+            <p>
+                In Python, monkey patching refers to the ability to dynamically modify an existing class or 
+                module at runtime by changing or adding its attributes, methods or functions.
+            </p>
+            <p>
+                This technique can be useful in situations where you want to modify the behavior of a class 
+                or function that you don't have the source code for, or where you need to make a temporary 
+                modification for testing or debugging purposes
+            </p>
+        </div>
+
+        <div>
+            <h3>44) What are the differences between zip(), map(), filter() ?</h3>
+            <p>
+                <ol>
+                    <li>
+                        <strong>zip():</strong> The <strong>zip()</strong> function takes iterables as input 
+                        and returns an iterator of tuples. The returned tuples contain elements from each 
+                        input iterable, with the i-th tuple containing the i-th element from each iterable
+                        <p class="code">
+                            <strong>Example:</strong> <br>
+                            a = [1, 2, 3] <br>
+                            b = ['one', 'two', 'three'] <br>
+                            zipped = zip(a, b) <br>
+                            print(list(zipped))  # Output: [(1, 'one'), (2, 'two'), (3, 'three')] <br>
+                        </p>
+                    </li>
+                    <li>
+                        <strong>map():</strong> The <strong>map()</strong> function takes a function and 
+                        one or more iterables as input and returns an iterator. It applies the given function 
+                        to each element of the iterables and returns an iterator of the results.
+                        <p class="code">
+                            <strong>Example:</strong> <br>
+                            def square(x): <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return x*x <br>
+                            a = [1, 2, 3, 4] <br>
+                            squared = map(square, a) <br>
+                            print(list(squared))  # Output: [1, 4, 9, 16] <br>
+                        </p>
+                    </li>
+                    <li>
+                        <strong>filter():</strong> The <strong>filter()</strong> function takes a function 
+                        and an iterable as input and returns an iterator of elements for which the function 
+                        returns <strong>True</strong>. It filters out elements from the iterable that do not 
+                        meet the condition specified in the function.
+                        <p class="code">
+                            <strong>Example:</strong> <br>
+                            def is_even(x): <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return x % 2 == 0 <br>
+                            a = [1, 2, 3, 4, 5, 6] <br>
+                            even_nums = filter(is_even, a) <br>
+                            print(list(even_nums))  # Output: [2, 4, 6] <br>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            <p>
+                The main differences between these three functions are as follows:
+                <ul>
+                    <li>
+                        <strong>zip()</strong> is used to combine two or more iterables into a single 
+                        iterable of tuples.
+                    </li>
+                    <li>
+                        <strong>map()</strong> is used to apply a function to each element of an iterable and 
+                        return an iterator of the results.
+                    </li>
+                    <li>
+                        <strong>filter()</strong> is used to apply a function to each element of an iterable 
+                        and return an iterator of the elements for which the function returns <strong>True</strong>.
+                    </li>
+                </ul>
+                Each function serves a different purpose, and their usage depends on the specific needs of the program.
+            </p>
+        </div>
+
+        <div>
+            <h3>45) How exception handling is done in Python?</h3>
+            <p>
+                Exception handling is a way to handle errors or exceptions that occur during program 
+                execution. In Python, exceptions are raised when an error or unexpected situation occurs 
+                during program execution.
+            </p>
+            <p>
+                To handle exceptions in Python, we use the <strong>try</strong> and <strong>except</strong> 
+                blocks. The code that may raise an exception is written inside the <strong>try</strong> block.
+                If an exception is raised during the execution of the code inside the <strong>try</strong> 
+                block, the program control is transferred to the <strong>except</strong> block where we can 
+                handle the exception. 
+            </p>
+            <p>
+                We can also use the <strong>finally</strong> block to ensure that certain code is executed 
+                regardless of whether an exception is raised or not. The <strong>finally</strong> block is 
+                executed after the <strong>try</strong> and <strong>except</strong> blocks. Here is an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                try: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# code that may raise an exception <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = int(input("Enter a number: ")) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 1/x <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(y) <br>
+                except ZeroDivisionError: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Cannot divide by zero") <br>
+                except ValueError: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Invalid input. Please enter a valid number.") <br>
+                finally: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Program execution complete")
+            </p>
+            <p>
+                In the above example, we are trying to divide 1 by the number entered by the user. We use 
+                the <strong>try</strong> block to handle any exceptions that may occur during the execution 
+                of this code. If the user enters 0, a <strong>ZeroDivisionError</strong> is raised. If the 
+                user enters a non-numeric value, a <strong>ValueError</strong> is raised. We handle these 
+                exceptions separately in the <strong>except</strong> blocks. "Program execution complete" 
+                is printed after the <strong>try</strong> and <strong>except</strong> blocks have executed, 
+                regardless of whether an exception was raised or not.
+            </p>
+        </div>
+
+        <div>
+            <h3>46) How to display current date and time in Python?</h3>
+            <p>
+                You can display the current date and time in Python using the datetime module. Here's an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                import datetime <br>
+                            <br>
+                # get the current date and time <br>
+                now = datetime.datetime.now() <br>
+                                <br>
+                # display the date and time in a specific format <br>
+                print("Current date and time: ") <br> 
+                print(now.strftime("%Y-%m-%d %H:%M:%S")) <br>
+            </p>
+            <p>
+                This will output the current date and time in the format <strong>YYYY-MM-DD HH:MM:SS</strong>, for example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                Current date and time: <br>
+                2023-03-14 12:34:56  <br>        
+            </p>
+        </div>
+
+        <div>
+            <h3>47) What is PIP?</h3>
+            <p>
+                PIP (Python Package Installer) is a package management system used to install and manage 
+                software packages written in Python. It is used to easily install third-party modules and 
+                libraries that are not part of the Python standard library. PIP allows users to install and 
+                uninstall packages, search for packages, and upgrade packages to their latest versions. It 
+                is a command-line tool that is used by developers to manage Python packages and dependencies 
+                in their projects. PIP is pre-installed in most of the recent versions of Python, but can 
+                also be installed manually.
+            </p>
+        </div>
+
+        <div>
+            <h3>48) Does Python support multiple inheritance?</h3>
+            <p>
+                Yes, Python supports multiple inheritance, which means that a class can inherit attributes 
+                and methods from multiple parent classes. In Python, a class can be derived from more than 
+                one base class, by specifying multiple base classes in the class definition using a 
+                comma-separated list of parent classes. Here's an example:
+            </p>
+            <p class="code">
+                <strong>Example:</strong> <br>
+                class A: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def method_A(self): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Method A") <br>
+                             <br>
+                class B: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def method_B(self): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Method B") <br>
+                            <br>
+                class C(A, B): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def method_C(self): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Method C") <br>
+            </p>
+            <p>
+                In the above example, the class "C" is derived from both "A" and "B" classes. Therefore, 
+                "C" will inherit all the methods and attributes from both "A" and "B" classes, along with 
+                its own methods and attributes.
+            </p>
+        </div>
+
+        <div>
+            <h3>49) What is pandas module?</h3>
+            <p>
+                Pandas is a Python module that is used for data manipulation and analysis. It provides data 
+                structures and functions that make working with structured data more accessible and intuitive.
+                Pandas allows for the import of data from various data sources, such as CSV, Excel, SQL 
+                databases, and other file formats. The two primary data structures in Pandas are the Series 
+                and DataFrame objects, which allow for the manipulation of one-dimensional and two-dimensional
+                data, respectively. Pandas also provides functions for data cleaning, transformation, merging,
+                and visualization. It is widely used in data analysis and scientific computing fields.
+            </p>
+        </div>
+
+        <div>
+            <h3>50) What is a DataFrame?</h3>
+            <p>
+                A DataFrame is a 2-dimensional labeled data structure in pandas, which is similar to a 
+                spreadsheet or SQL table. It is a table-like structure consisting of rows and columns. In a 
+                DataFrame, each column can have a different data type, including integer, float, string, 
+                and boolean. Also, each row has a unique index that starts from 0 by default.
+            </p>
+            <p>
+                DataFrames are commonly used for data manipulation and analysis in data science, as they 
+                provide a powerful and flexible tool to work with structured data. They can be loaded from 
+                various data sources like CSV files, Excel spreadsheets, SQL databases, and JSON files.
+            </p>
+        </div>
+
+        <div>
+            <h3>51) What is numpy module?</h3>
+            <p>
+                NumPy is a Python library used for working with arrays. It also has functions for working in domain 
+                of linear algebra, Fourier transform, and matrices. NumPy stands for "Numerical Python". It provides 
+                a high-performance multidimensional array object, and tools for working with these arrays.
+            </p>
+        </div>
+
+        <div>
+            <h3>52) Which are the databases that are supported by the Python?</h3>
+            <p>
+                Python supports several databases, including:
+                <ul>
+                    <li>SQLite</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Oracle Database</li>
+                    <li>Microsoft SQL Server</li>
+                    <li>MongoDB (a NoSQL database)</li>
+                </ul>
+                Python provides several modules to interact with databases, including sqlite3, 
+                mysql-connector-python, psycopg2, cx_Oracle, pyodbc, and pymongo.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
