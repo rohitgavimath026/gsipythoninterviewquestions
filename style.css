@@ -88,10 +88,6 @@ img {
     text-align: justify;
   }
 
-  p, ul li, ol li{
-    font-weight: 450;
-  }
-
   a {
     color: #007bff;
     text-decoration: none;
